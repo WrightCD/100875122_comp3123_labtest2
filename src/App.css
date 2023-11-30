@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+#title {
+  color: white;
+  font-size: 5em;
+  margin-top: 50px;
+  text-align: center;
+}
+
+body {
+  background-color: #282c34;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +46,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#weatherbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./img/cloud.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+}
+
+#leftbox {
+  flex: 30%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 6%;
+}
+
+#rightbox {
+  flex: 70%;
+  background-color: rgba(50, 50, 50, 0.7);
+  padding: 20px;
+  margin-right: 60px;
+}
+
+#stats {
+  color: white;
+}
+
+#search {
+  background-color: black;
+  padding: 10px;
+  border: 1px solid black;
+  width: 65%;
+}
+
+#search input {
+  width: 80%;
 }
